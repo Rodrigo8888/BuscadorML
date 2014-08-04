@@ -1,0 +1,113 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* MyApplication2\
+* MyApplication2\.idea\
+* MyApplication2\.idea\copyright\
+* MyApplication2\.idea\copyright\profiles_settings.xml
+* MyApplication2\.idea\scopes\
+* MyApplication2\.idea\scopes\scope_settings.xml
+* MyApplication2\.idea\workspace.xml
+* MyApplication2\app\
+* MyApplication2\app\app.iml
+* MyApplication2\build\
+* MyApplication2\build\intermediates\
+* MyApplication2\build\intermediates\model_data.bin
+* ic_launcher-web.png
+* mercadolibre\
+* mercadolibre\.idea\
+* mercadolibre\.idea\.name
+* mercadolibre\.idea\compiler.xml
+* mercadolibre\.idea\copyright\
+* mercadolibre\.idea\copyright\profiles_settings.xml
+* mercadolibre\.idea\encodings.xml
+* mercadolibre\.idea\misc.xml
+* mercadolibre\.idea\modules.xml
+* mercadolibre\.idea\scopes\
+* mercadolibre\.idea\scopes\scope_settings.xml
+* mercadolibre\.idea\vcs.xml
+* mercadolibre\.idea\workspace.xml
+* mercadolibre\build.gradle
+* mercadolibre\gradle\
+* mercadolibre\gradle\wrapper\
+* mercadolibre\gradle\wrapper\gradle-wrapper.jar
+* mercadolibre\gradle\wrapper\gradle-wrapper.properties
+* mercadolibre\gradlew
+* mercadolibre\gradlew.bat
+* mercadolibre\local.properties
+* mercadolibre\mercadolibre\
+* mercadolibre\mercadolibre\build.gradle
+* mercadolibre\mercadolibre\libs\
+* mercadolibre\mercadolibre\libs\android-support-v4.jar
+* mercadolibre\mercadolibre\libs\universal-image-loader-1.9.2.jar
+* mercadolibre\mercadolibre\src\
+* mercadolibre\mercadolibre\src\main\
+* mercadolibre\mercadolibre\src\main\AndroidManifest.xml
+* mercadolibre\mercadolibre\src\main\java\
+* mercadolibre\mercadolibre\src\main\java\com\
+* mercadolibre\mercadolibre\src\main\java\com\example\
+* mercadolibre\mercadolibre\src\main\java\com\example\mercadolibre\
+* mercadolibre\mercadolibre\src\main\java\com\example\mercadolibre\GetList.java
+* mercadolibre\mercadolibre\src\main\java\com\example\mercadolibre\Item.java
+* mercadolibre\mercadolibre\src\main\java\com\example\mercadolibre\ListAdapter.java
+* mercadolibre\mercadolibre\src\main\java\com\example\mercadolibre\MainActivity.java
+* mercadolibre\mercadolibre\src\main\res\
+* mercadolibre\mercadolibre\src\main\res\drawable-hdpi\
+* mercadolibre\mercadolibre\src\main\res\drawable-hdpi\ic_launcher.png
+* mercadolibre\mercadolibre\src\main\res\drawable-mdpi\
+* mercadolibre\mercadolibre\src\main\res\drawable-mdpi\ic_launcher.png
+* mercadolibre\mercadolibre\src\main\res\drawable-xhdpi\
+* mercadolibre\mercadolibre\src\main\res\drawable-xhdpi\ic_launcher.png
+* mercadolibre\mercadolibre\src\main\res\drawable-xxhdpi\
+* mercadolibre\mercadolibre\src\main\res\drawable-xxhdpi\ic_launcher.png
+* mercadolibre\mercadolibre\src\main\res\layout\
+* mercadolibre\mercadolibre\src\main\res\layout\activity_main.xml
+* mercadolibre\mercadolibre\src\main\res\layout\row.xml
+* mercadolibre\mercadolibre\src\main\res\menu\
+* mercadolibre\mercadolibre\src\main\res\menu\main.xml
+* mercadolibre\mercadolibre\src\main\res\values-v11\
+* mercadolibre\mercadolibre\src\main\res\values-v11\styles.xml
+* mercadolibre\mercadolibre\src\main\res\values-v14\
+* mercadolibre\mercadolibre\src\main\res\values-v14\styles.xml
+* mercadolibre\mercadolibre\src\main\res\values-w820dp\
+* mercadolibre\mercadolibre\src\main\res\values-w820dp\dimens.xml
+* mercadolibre\mercadolibre\src\main\res\values\
+* mercadolibre\mercadolibre\src\main\res\values\dimens.xml
+* mercadolibre\mercadolibre\src\main\res\values\strings.xml
+* mercadolibre\mercadolibre\src\main\res\values\styles.xml
+* mercadolibre\settings.gradle
+* proguard-project.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => mercadolibre\src\main\AndroidManifest.xml
+* assets\ => mercadolibre\src\main\assets\
+* libs\android-support-v4.jar => mercadolibre\libs\android-support-v4.jar
+* libs\universal-image-loader-1.9.2.jar => mercadolibre\libs\universal-image-loader-1.9.2.jar
+* res\ => mercadolibre\src\main\res\
+* src\ => mercadolibre\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

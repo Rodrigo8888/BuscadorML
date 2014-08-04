@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mercadolibre</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail">Detail</string>
+    <string name="precio_menor">Precio Menor</string>
+    <string name="precio_mayor">Precio Mayor</string>
+    <string name="title_activity_descripcion">Descripcion</string>
+    <string name="description">Description</string>
+
+</resources>

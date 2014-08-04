@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\usuario\workspace\mercadolibre\mercadolibre\mercadolibre\build\intermediates\pre-dexed\debug\android-support-v4-44db07f12a2249ec85b3f15dc3d0a89f395a5832.jar"
+        jar="C:\Users\usuario\workspace\mercadolibre\mercadolibre\mercadolibre\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="cb6883d96005bc85b3e868f204507ea5b4fa9bbf"/>
+    <item
+        dex="C:\Users\usuario\workspace\mercadolibre\mercadolibre\mercadolibre\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.2-77f7cd85936c15c2c5f57430bf8baa766973b59c.jar"
+        jar="C:\Users\usuario\workspace\mercadolibre\mercadolibre\mercadolibre\libs\universal-image-loader-1.9.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9e025bc5b84968e7d6ac765e660a70b3e5a87432"/>
+
+</pre-dex-items>
