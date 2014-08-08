@@ -22,7 +22,7 @@ public class Item implements Serializable, Comparable{
 		this.title = title;
 		this.price = price;
 		this.idItem = id;
-		this.setDescription(descripcion);
+		this.description=descripcion;
 	}
 	
 	public String getImage() {

@@ -1,3 +1,12 @@
+/*import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.nostra13.universalimageloader.core.ImageLoader;
+
 /*package com.example.mercadolibre;
 
 import java.io.BufferedInputStream;
@@ -41,142 +50,25 @@ public class Descripcion extends Activity {
 	TextView tv;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_descripcion);
+	//Vincular los elementos con la vista, se muestra titulo, imagen y precio
+	public View getView(int position, View convertView, ViewGroup parent) {
+		LayoutInflater inflater = (LayoutInflater) context
+				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		View rowView = inflater.inflate(R.layout.row, parent, false);
 
-		if (savedInstanceState == null) {
-			getFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
-		}
-		//dialog = ProgressDialog.show(Descripcion.this, "", "Accediendo a Descripcion...", true);
-		Bundle b = this.getIntent().getExtras();
-		final Item item = (Item)b.getSerializable("item");
+		Item item = list.get(position);
+		TextView txtName = (TextView) rowView.findViewById(R.id.textView1);
+		txtName.setText(item.getTitle());
 		
-		this.tv = (TextView)findViewById(R.id.itemDes);
+		ImageView image = (ImageView)rowView.findViewById(R.id.imageView1);
+		ImageLoader.getInstance().displayImage(item.getImage(), image);
 		
-		mActivity= this;
+		TextView costo = (TextView) rowView.findViewById(R.id.costo);
+		costo.setText(item.getPrice());
 		
-		/*GetDescripcion desc = new GetDescripcion(Descripcion.this, item.getIdItem());
-		desc.start();*/
-		
-		/*TextView txt = (TextView)findViewById(R.id.itemDes);
-		txt.setText(item.getIdItem());*/
-		//runThread(item.getIdItem());
-		
-		/*Handler refresh = new Handler(Looper.getMainLooper());
-		refresh.post(new Runnable() {
-		    public void run()
-		    {
-		    	try {
-	    			URL urlToRequest = new URL("https://api.mercadolibre.com/items/"+item.getIdItem()+"/description/");
-	    			HttpURLConnection urlConnection = (HttpURLConnection) urlToRequest.openConnection();
-	    			InputStream in = new BufferedInputStream(urlConnection.getInputStream());
-	    			JSONObject json = new JSONObject(getResponseText(in));
-	    			String description = json.getString("text");
-	    			
-	    			/*if (this.activity != null){
-	    				this.activity.refreshDescription(description);
-	    			}else{
-	    				String coso = "null";
-	    			}*/
-	    			/*tv.setText(description);
-	    			
-	    		} catch (Exception e) {
-	    			e.printStackTrace();
-	    		}
-		    }
-		});
+		return rowView;
 	}
-	
-	private void runThread(final String idItem) {
-	    new Thread() {
-	        public void run() {
-	        	try {
-	    			URL urlToRequest = new URL("https://api.mercadolibre.com/items/"+idItem+"/description/");
-	    			HttpURLConnection urlConnection = (HttpURLConnection) urlToRequest.openConnection();
-	    			InputStream in = new BufferedInputStream(urlConnection.getInputStream());
-	    			JSONObject json = new JSONObject(getResponseText(in));
-	    			String description = json.getString("text");
-	    			
-	    			/*if (this.activity != null){
-	    				this.activity.refreshDescription(description);
-	    			}else{
-	    				String coso = "null";
-	    			}*/
-	    		/*	tv.setText(description);
-	    			
-	    		} catch (Exception e) {
-	    			e.printStackTrace();
-	    		}
-	        }
-	    }.start();
-	}
-	
-	/*
-	thread{
-	    mActivity.runOnUiThread(new Runnable() {
-	        public void run() {
-	            tv.setText("javier");
-	        }
-	    });
-	}*/
-
-	/*@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.descripcion, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
-
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-	/*public static class PlaceholderFragment extends Fragment {
-
-		public PlaceholderFragment() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_descripcion,
-					container, false);
-			return rootView;
-		}
-	}
-
-	/*public void refreshDescription(String description) {
-		//dialog.dismiss();
-		//Item item = new Item("","","","",description);
-		//final ArrayList<Item> items = new ArrayList<Item>();
-		//items.add(item);
-		this.descripcion = description;
-		/*runOnUiThread(new Runnable() {
-			public void run() {
-				adapter = new ListAdapter(Descripcion.this, R.id.listaDes, items,0);
-				listdesc.setAdapter(adapter);
-				adapter.notifyDataSetChanged();
-				}
-			});*/
-		//TextView txt = (TextView)findViewById(R.id.itemDes);
-		//txt.setText(description);
-	//}
-	
-	/*private String getResponseText(InputStream inStream) {
+		/*private String getResponseText(InputStream inStream) {
 		return new Scanner(inStream).useDelimiter("\\A").next();
 	}
 }*/

@@ -51,6 +51,8 @@ public class MainActivity extends Activity {
 			
 		});
 		
+
+		
 		ImageButton btSearch = (ImageButton)findViewById(R.id.imageButton1);
 		btSearch.setOnClickListener(new View.OnClickListener() {
 			

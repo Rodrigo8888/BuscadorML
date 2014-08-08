@@ -29,7 +29,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/editText1"
-        android:dividerHeight="4dp" >
+        android:dividerHeight="4dp"
+        android:background="#FFFFFF" >
 
     </ListView>
 

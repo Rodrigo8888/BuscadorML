@@ -32,6 +32,7 @@ public class GetList extends Thread {
 			JSONObject json = new JSONObject(getResponseText(in));
 			JSONArray lista = json.getJSONArray("results");
 			
+			
 			ArrayList<Item> listaItems = new ArrayList<Item>();
 			
 			//Creo nuevos items con cada uno de los elementos que necesito de la Api

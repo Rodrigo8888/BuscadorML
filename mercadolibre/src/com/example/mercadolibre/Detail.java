@@ -1,5 +1,7 @@
 package com.example.mercadolibre;
 
+import java.util.ArrayList;
+
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import android.app.Activity;
@@ -12,6 +14,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -38,7 +41,13 @@ public class Detail extends Activity {
 		
 		ImageView image = (ImageView)findViewById(R.id.imageView1);
 		ImageLoader.getInstance().displayImage(i.getImage(), image);
+		
+		//TextView precio = (TextView)findViewById(R.id.precio);
+		//precio.setText(i.getPrice())
+			
 	}
+	
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

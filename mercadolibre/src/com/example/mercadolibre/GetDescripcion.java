@@ -11,32 +11,28 @@ import org.json.JSONObject;
 
 
 
-/*Esta clase era exclusivamente para tratar de obtener la descripcion de la APIs de ML y refrescar la vista con la descripcion obtenida
+//Esta clase era exclusivamente para tratar de obtener la descripcion de la APIs de ML y refrescar la vista con la descripcion obtenida
 public class GetDescripcion extends Thread {
 
-	private Descripcion activity;
-	private String idItem;
+	private MainActivity activity;
+	private Item idItem;
 	
-	public GetDescripcion(Descripcion activity, String idItem)
+	public GetDescripcion(MainActivity activity, Item i)
 	{
 		this.activity = activity;
-		this.idItem = idItem;
+		this.idItem = i;
 	}
 	
 	@Override
 	public void run() {
 		try {
-			URL urlToRequest = new URL("https://api.mercadolibre.com/items/"+this.idItem+"/description/");
+			URL urlToRequest = new URL("https://api.mercadolibre.com/items/"+this.idItem.getDescription()+"/description/");
 			HttpURLConnection urlConnection = (HttpURLConnection) urlToRequest.openConnection();
 			InputStream in = new BufferedInputStream(urlConnection.getInputStream());
 			JSONObject json = new JSONObject(getResponseText(in));
 			String description = json.getString("text");
+			this.activity.refreshDescription(description);
 			
-			if (this.activity != null){
-				this.activity.refreshDescription(description);
-			}else{
-				String coso = "null";
-			}
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -48,5 +44,5 @@ public class GetDescripcion extends Thread {
 		return new Scanner(inStream).useDelimiter("\\A").next();
 	}
 
-}
-*/
+}*/
+
